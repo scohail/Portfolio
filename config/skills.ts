@@ -19,13 +19,10 @@ import {
   SiJavascript,
   SiJira,
   SiLinux,
-  SiMaterialUi,
-  SiMathworks,
   SiMongodb,
   SiMysql,
-  SiNextDotJs,
-  SiNodeDotJs,
-  SiNodeRed,
+  SiNextdotjs,
+  SiNodedotjs,
   SiPhp,
   SiPostgresql,
   SiPython,
@@ -34,17 +31,53 @@ import {
   SiRedis,
   SiRedux,
   SiSiemens,
-  SiSocketDotIo,
-  SiStyledComponents,
   SiTailwindcss,
   SiTypescript,
   SiVim,
   SiVisualstudiocode,
+  SiMicrosoftoffice,
+  SiPowerbi,
+  SiTableau,
+  SiCsharp,
+  SiHtml5,
+  SiCss3,
+  SiLatex,
+  SiFlask,
+  SiApacheecharts,
+  SiUnity,
+  SiStreamlit,
+  SiMicrosoftsqlserver,
+  SiApachehadoop,
+  SiApachespark,
+  SiApachekafka,
+  SiTensorflow,
+  SiPytorch,
+  SiScikitlearn,
+  SiKeras,
+  SiDotnet
+
+
+  
+  
+
+
+
 } from 'react-icons/si'
+
+import { SiMathworks,SiZebratechnologies, SiKeysight, SiLangchain, SiHuggingface} from "../components/Icons";
+
+
+import { 
+    FaGreaterThan,
+    FaJava,
+ } from 'react-icons/fa'
+
+
 
 export type SkillCategory =
   | 'engineering'
   | 'embedded systems'
+  | 'Programming Languages'
   | 'backend'
   | 'frontend'
   | 'cicd'
@@ -53,6 +86,8 @@ export type SkillCategory =
   | 'productivity boost'
   | 'mobile'
   | 'desktop'
+  | 'Data Engineering & Big Data Tools'
+  | 'Machine Learning & AI'
 
 export type Skill = {
   name: string
@@ -63,30 +98,24 @@ export const Skills: {
   [key in SkillCategory]: Skill[]
 } = {
   engineering: [
-    {
-      name: 'Ansys',
-      icon: SiAnsible,
-    },
-    {
-      name: 'Solidworks',
-      icon: SiDassaultsystemes,
-    },
-    {
-      name: 'Catiav5',
-      icon: SiDassaultsystemes,
-    },
-    {
-      name: 'Matlab',
-      icon: SiMathworks,
-    },
-    {
-      name: 'TIA Portal',
-      icon: SiSiemens,
-    },
-    {
-      name: 'Node red',
-      icon: SiNodeRed,
-    },
+    { name: 'Solidworks', icon: SiDassaultsystemes, },
+    { name: 'Catiav5', icon: SiDassaultsystemes,},
+    { name: 'Matlab', icon: SiMathworks, },
+    { name: 'Minitab', icon: FaGreaterThan, },
+    { name: 'Unity', icon: SiUnity, },
+    { name: 'Adaptive Vision', icon: SiZebratechnologies, },
+    { name: 'ProCast', icon: SiKeysight, },
+
+  ],  
+  'Programming Languages': [
+    { name: 'Python', icon: SiPython,},
+    { name: 'Java', icon: FaJava },
+    { name: 'C#', icon: SiCsharp,},
+    { name: 'Javascript', icon: SiJavascript },
+    { name: 'SQL', icon: SiMysql },
+    { name: 'HTML', icon: SiHtml5 },
+    { name: 'CSS', icon: SiCss3 },
+    { name: 'Latex', icon: SiLatex },
   ],
   'embedded systems': [
     {
@@ -107,140 +136,51 @@ export const Skills: {
     },
   ],
   backend: [
-    {
-      name: 'Node',
-      icon: SiNodeDotJs,
-    },
-    {
-      name: 'Javascript (ES6+)',
-      icon: SiJavascript,
-    },
-    {
-      name: 'Typescript',
-      icon: SiTypescript,
-    },
-    {
-      name: 'Graphql (JS, C#)',
-      icon: SiGraphql,
-    },
-    {
-      name: 'PHP (Wordpress, Slim)',
-      icon: SiPhp,
-    },
-    {
-      name: 'Python',
-      icon: SiPython,
-    },
+    { name: 'Node', icon: SiNodedotjs, },
+    { name: 'Typescript', icon: SiTypescript, },
+    { name: 'Flask', icon: SiFlask, },
   ],
   frontend: [
-    {
-      name: 'React',
-      icon: SiReact,
-    },
-    {
-      name: 'NextJS',
-      icon: SiNextDotJs,
-    },
-    {
-      name: 'Apollo Graphql',
-      icon: SiApollographql,
-    },
-    {
-      name: 'Redux',
-      icon: SiRedux,
-    },
+    { name: 'React', icon: SiReact, },
+    { name: 'NextJS', icon: SiNextdotjs, },
+    { name: 'Streamlit', icon: SiStreamlit, },
   ],
   database: [
-    {
-      name: 'PostgreSQL',
-      icon: SiPostgresql,
-    },
-    {
-      name: 'MySQL',
-      icon: SiMysql,
-    },
-    {
-      name: 'MongoDb',
-      icon: SiMongodb,
-    },
-    {
-      name: 'Redis',
-      icon: SiRedis,
-    },
-    {
-      name: 'SocketIO',
-      icon: SiSocketDotIo,
-    },
+    { name: 'PostgreSQL',icon: SiPostgresql,},
+    { name: 'MySQL', icon: SiMysql, },
+    { name: 'MongoDb', icon: SiMongodb, },
+    { name: 'Microsoft SQL Server', icon: SiMicrosoftsqlserver, },
   ],
   cicd: [
-    {
-      name: 'Docker',
-      icon: SiDocker,
-    },
-    {
-      name: 'CPanel',
-      icon: SiCpanel,
-    },
-    {
-      name: 'Github Actions',
-      icon: SiGit,
-    },
-    {
-      name: 'EAS Build',
-      icon: SiExpo,
-    },
+    { name: 'Docker',icon: SiDocker,},
+    { name: 'Github Actions' , icon: SiGit, },
   ],
   'ui frameworks': [
-    {
-      name: 'Styled Components',
-      icon: SiStyledComponents,
-    },
-    {
-      name: 'AntDesign',
-      icon: AiOutlineAntDesign,
-    },
-    {
-      name: 'MaterialUI',
-      icon: SiMaterialUi,
-    },
-    {
-      name: 'Framer Motion',
-      icon: SiFramer,
-    },
-    {
-      name: 'TailwindCSS',
-      icon: SiTailwindcss,
-    },
-    {
-      name: 'Shadcn',
-      icon: SiNextDotJs,
-    },
+    { name: 'TailwindCSS', icon: SiTailwindcss,},
+    { name: 'Shadcn', icon: SiNextdotjs,},
   ],
   'productivity boost': [
-    {
-      name: 'VSCode',
-      icon: SiVisualstudiocode,
-    },
-    {
-      name: 'Git',
-      icon: SiGit,
-    },
-    {
-      name: 'Bash',
-      icon: SiGnubash,
-    },
-    {
-      name: 'Linux',
-      icon: SiLinux,
-    },
-    {
-      name: 'Vim',
-      icon: SiVim,
-    },
-    {
-      name: 'Jira',
-      icon: SiJira,
-    },
+    { name: 'VS Code', icon: SiVisualstudiocode },
+    { name: 'Git', icon: SiGit },
+    { name: 'Jira', icon: SiJira },
+    { name: 'Microsoft office', icon: SiMicrosoftoffice }, // Add SiMicrosoftoffice to imports
+    { name: 'Power BI', icon: SiPowerbi }, // Add SiPowerbi to imports
+    { name: 'Tableau', icon: SiTableau },
+  ],
+  'Data Engineering & Big Data Tools': [
+    { name: 'Apache Hadoop', icon: SiApachehadoop },
+    { name: 'Apache Spark', icon: SiApachespark },
+    { name: 'Apache Kafka', icon: SiApachekafka },
+    { name: 'Linux', icon: SiLinux },
+  ],
+  'Machine Learning & AI': [
+    { name: 'TensorFlow', icon: SiTensorflow },
+    { name: 'PyTorch', icon: SiPytorch },
+    { name: 'Scikit-learn', icon: SiScikitlearn },
+    { name: 'Keras', icon: SiKeras },
+    { name: 'LangChain', icon: SiLangchain },
+    { name: 'Hugging Face', icon: SiHuggingface },
+    { name: 'TensorBoard', icon: SiTensorflow  },
   ],
   mobile: [
     {
@@ -253,10 +193,9 @@ export const Skills: {
     },
   ],
   desktop: [
-    {
-      name: 'Electron',
-      icon: SiElectron,
-    },
+    {name: 'Electron',icon: SiElectron,},
+    {name: 'PyQt', icon: SiPython,},
+    {name: '.NET', icon: SiDotnet, },
   ],
 }
 

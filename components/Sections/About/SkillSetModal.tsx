@@ -81,6 +81,9 @@ const SkillSetModal = ({ isOpen, onClose }: ISkillSetModal) => {
   const desktopCols = splitSkills(Skills.desktop)
   const embeddedCols = splitSkills(Skills['embedded systems'])
   const engineeringCols = splitSkills(Skills.engineering)
+  const programminglangCols = splitSkills(Skills['Programming Languages'])
+  const dataengineeringCols = splitSkills(Skills['Data Engineering & Big Data Tools'])
+  const machinelearningCols = splitSkills(Skills['Machine Learning & AI'])
   return (
     <Modal
       isOpen={isOpen}
@@ -94,15 +97,21 @@ const SkillSetModal = ({ isOpen, onClose }: ISkillSetModal) => {
         <ModalCloseButton />
         <ModalBody className={styles.skillModal}>
           <SkillList title="Engineering" columns={engineeringCols} />
-          <SkillList title="Embedded Systems" columns={embeddedCols} />
+          <SkillList title='Programming Languages' columns={programminglangCols} />
+          <SkillList title="Database and Streams" columns={dataBaseCols} />
+          <SkillList title="Data Engineering & Big Data Tools" columns={dataengineeringCols} />
+          <SkillList title="Machine Learning & AI" columns={machinelearningCols} />
+          {/* <SkillList title="Embedded Systems" columns={embeddedCols} /> */}
           <SkillList title="Backend Centric" columns={backendCols} />
           <SkillList title="Frontend Centric" columns={frontendCols} />
           <SkillList title="CICD centric" columns={cicdCols} />
-          <SkillList title="Database and Streams" columns={dataBaseCols} />
           <SkillList title="Ui Frameworks" columns={uiFrameWorkCols} />
-          <SkillList title="Mobile Development" columns={mobileCols} />
+          {/* <SkillList title="Mobile Development" columns={mobileCols} /> */}
           <SkillList title="Desktop App" columns={desktopCols} />
           <SkillList title="Productivity boosts" columns={productivityCols} />
+          
+          
+
         </ModalBody>
         <ModalFooter>
           <Text fontSize="x-small">*Some micro frameworks not included </Text>

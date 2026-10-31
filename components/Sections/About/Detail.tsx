@@ -15,13 +15,20 @@ import { IoMdOpen } from 'react-icons/io'
 import {
   SiDocker,
   SiLinux,
-  SiMathworks,
-  SiNextDotJs,
-  SiNodeDotJs,
-  SiNodeRed,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiNodered,
+  SiPython,
   SiReact,
   SiTypescript,
+  SiMicrosoftsqlserver,
+  SiApachehadoop,
+  SiSupabase,
+  SiTensorflow,
+  SiPowerbi
 } from 'react-icons/si'
+
+import { SiMathworks,SiZebratechnologies, SiKeysight, SiLangchain, SiHuggingface} from "../../Icons";
 
 type ISkillSetModal = {
   onOpen(): void
@@ -30,7 +37,7 @@ type ISkillSetModal = {
 const Detail = ({ onOpen }: ISkillSetModal) => {
   const emphasis = useColorModeValue('teal.500', 'cyan.200')
   const currentYear = new Date().getFullYear()
-  const professionalYears = currentYear - 2019
+  const professionalYears = currentYear - 2022
 
   return (
     <Stack
@@ -45,42 +52,42 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
         style={{
           fontVariantCaps: 'small-caps',
         }}
-        marginBottom={100}
       >
         What i do.
       </Heading>
       <Text variant="description">
-        I`ve been in the software field for {professionalYears} years now and
-        learning hardware stuffs as well. I love to work with{' '}
+      I've been in the industrial field for {professionalYears} years, while also expanding my knowledge in software and digitalization. I enjoy working with{' '}
       </Text>
 
       <SimpleGrid columns={2} spacing={4}>
         <List spacing={3}>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiMathworks} color={emphasis} fontSize="2em" />
-            Matlab
+            <ListIcon as={SiPython} color={emphasis} fontSize="2em" />
+            Python
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiNodeRed} color={emphasis} fontSize="2em" />
-            Node red
+            <ListIcon as={SiSupabase} color={emphasis} fontSize="2em" />
+            Supabase
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiTypescript} color={emphasis} fontSize="2em" />
-            Typescript
+            <ListIcon as={SiApachehadoop} color={emphasis} fontSize="2em" />
+            Hadoop
           </ListItem>
-          <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiNodeDotJs} color={emphasis} fontSize="2em" />
-            Node
-          </ListItem>
-        </List>
-        <List spacing={3}>
           <ListItem fontSize="small" display="flex" alignItems="center">
             <ListIcon as={SiReact} color={emphasis} fontSize="2em" />
             React
           </ListItem>
+          
+
+        </List>
+        <List spacing={3}>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiNextDotJs} color={emphasis} fontSize="2em" />
-            NextJS
+            <ListIcon as={SiLangchain} color={emphasis} fontSize="2em" />
+            Langchain
+          </ListItem>
+          <ListItem fontSize="small" display="flex" alignItems="center">
+            <ListIcon as={SiPowerbi} color={emphasis} fontSize="2em" />
+            Powerbi
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
             <ListIcon as={SiDocker} color={emphasis} fontSize="2em" />

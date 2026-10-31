@@ -1,31 +1,8 @@
 import { Box, Icon, Link, Stack, Text } from '@chakra-ui/react'
-import { Variants } from 'framer-motion'
 import { memo } from 'react'
 import { RiCopyleftLine, RiGithubFill } from 'react-icons/ri'
-import { useInView } from 'react-intersection-observer'
-const rimuruVariant: Variants = {
-  shake: {
-    rotate: [0, 15, 0, -15, 0],
-    transition: {
-      delay: 1.2,
-      duration: 0.5,
-      repeat: 2,
-      ease: 'easeInOut',
-    },
-  },
-  jump: {
-    y: [0, -35, 0],
-    transition: {
-      delay: 1.8,
-      duration: 0.5,
-      repeat: 3,
-      ease: 'easeInOut',
-    },
-  },
-}
 
 const GetInTouch = () => {
-  const [ref, inView] = useInView()
   return (
     <Stack
       width={{ base: '99%', lg: '60%', xl: '75%' }}
@@ -44,13 +21,13 @@ const GetInTouch = () => {
           variant="description"
           textDecoration="none"
           rel="noreferrer"
-          href="https://github.com/aminenouabi/personal-portofolio"
+          href="https://github.com/scohail"
           target="_blank"
           _focus={{ boxShadow: 'none' }}
         >
           <Text as="span">
             <Icon as={RiGithubFill} h={6} w={6} /> <br />
-            Souhail HOUSNI <Icon as={RiCopyleftLine} /> 2024
+            Souhail HOUSNI <Icon as={RiCopyleftLine} /> {new Date().getFullYear()}
           </Text>
         </Link>
       </Box>

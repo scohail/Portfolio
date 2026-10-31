@@ -1,4 +1,4 @@
-export type Company = 'FeverTokens' | 'Gloowon'
+export type Company = 'MSMP' | 'DATATIKA' | 'TMPA' | 'TE'
 export type CompanyDetail = {
   name: string
   longName?: string
@@ -16,51 +16,88 @@ export type CompanyDetail = {
 export const Experiences: {
   [key in Company]: CompanyDetail
 } = {
-  FeverTokens: {
-    name: 'Fevertokens',
-    url: 'https://www.fevertokens.io/',
-    position: 'Blockchain Mobile Developer',
-    duration: 'Sep 2024 - Present',
+  MSMP: {
+    name: 'MSMP',
+    url: 'https://www.msmp.eu/',
+    position: 'Machine Learning & Data Driven Engineer',
+    duration: 'February 2025 - July 2025',
     logo: {
-      light:
-        'https://cdn.prod.website-files.com/61d9a9b5355373e087deb806/659cf260960988ec5d061b68_FTlogo.png',
-      dark: 'https://cdn.prod.website-files.com/61d9a9b5355373e087deb806/659cf260960988ec5d061b68_FTlogo.png',
+      light: '/worked_at_logos/ENSAM/AM_logo.png',
+      dark:  '/worked_at_logos/ENSAM/AM_Logo_dark.png',
     },
     roles: [
       <>
-        Contributed to the development of crypto wallet apps for iOS and Android
-        using React Native.
+        Set up a metamodel in order to finalize the virtual representation of the physical process (low-pressure foundry platform).
       </>,
       <>
-        Developed CI/CD pipelines for (build | test) apps using EAS Build and
-        Github Actions.
+        Implemented a full data-driven architecture, covering the entire pipeline from data generation and collection to preprocessing, model training, and deployment within a digital twin framework.
       </>,
-      <>Development of wallet based authentification system.</>,
+      <>Developed a user interface for testing and validating machine learning models.</>,
     ],
   },
-  Gloowon: {
-    name: 'Gloowon',
-    longName: 'Gloowon Inc.',
-    url: 'https://gloowon.com/',
-    position: 'Solution Achitect & Software Engineer',
-    duration: 'Sep 2021 - Sep 2024',
+  
+  TMPA : {
+    name: 'Tanger Med Port Authority',
+    longName: 'TMPA.',
+    url: 'https://www.tangermedport.com/en/',
+    position: 'Industrial Engineer',
+    duration: 'August 2024 - September 2024',
     logo: {
-      light: '/worked_at_logos/gloowon/logo.png',
-      dark: '/worked_at_logos/gloowon/logo.png',
+      light: '/worked_at_logos/TMPA/TMPA_Logo.png',
+      dark: '/worked_at_logos/TMPA/TMPA_Logo_dark.png',
+    },  
+    roles: [
+      <>
+        Designed a fraud detection system for TIR flows using open-source computer vision models.
+      </>,
+      <>
+        Automated the identification of truck brands and license plates using Optical Character Recognition (OCR) techniques.
+      </>,
+      <>Developed a user interface for report visualization and real-time truck supervision.</>,
+    ],
+  },
+  DATATIKA: {
+    name: 'DATATIKA',
+    longName: 'DATATIKA.',
+    url: 'https://datatika.com/',
+    position: 'Digitalization Engineer',
+    duration: 'June 2024 - August 2024',
+    logo: {
+      light: '/worked_at_logos/DATATIKA/DATATIKA_Logo_White.png',
+      dark: '/worked_at_logos/DATATIKA/DATATIKA_Logo.png',
     },
     roles: [
       <>
-        Developed web-based platforms for different types of clients using
-        ReactJS, NextJS, Typescript and NodeJS.
+        Implemented a Retrieval-Augmented Generation (RAG) architecture for an industrial use case using open-source language models.
       </>,
       <>
-        CI / CD pipelines for differnt dev tasks using Github Actions and turbo
-        monorepo.
+        Developed a machine learning model for forecasting industrial product prices for upcoming years based on historical sales data.
       </>,
-      <>Hosting and maintaining Linux servers and web infrastructures.</>,
-      <>Custom authentification system for different clients.</>,
+    
     ],
   },
+  TE: {
+    name: 'TE connectivity',
+    longName: 'TE.',
+    url: 'https://www.te.com/en/home.html',
+    position: 'Industrial Observation Intern',
+    duration: 'July 2023 - August 2023',
+    logo: {
+      light: '/worked_at_logos/TE/te-connectivity-logo.png',
+      dark: '/worked_at_logos/TE/te-connectivity-logo.png',
+    },
+    roles: [
+      <>
+        Gained foundational knowledge in the automotive sector, including cabling, assembly, and plastic injection processes.
+
+
+      </>,
+      <>
+        Optimized a production line by applying Lean Six Sigma methodologies to enhance efficiency and reduce defects.  </>,
+    ],
+  },
+  
+  
 }
 
-export const ExperiencesList = [Experiences.FeverTokens, Experiences.Gloowon]
+export const ExperiencesList = [Experiences.MSMP, Experiences.TMPA, Experiences.DATATIKA, Experiences.TE];

@@ -31,8 +31,8 @@ const FeaturedWorksSection = () => {
         Some of my works.
       </Heading>
       <Text variant="description">
-        Check out some of the works I made at freelancing, company & personal
-        projects.
+        Check out some of the projects I built during my internships and
+        academic work.
       </Text>
 
       <MotionGrid
@@ -44,12 +44,11 @@ const FeaturedWorksSection = () => {
         <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
             idx={1}
-            title="Play Position!"
-            src="/works/play-position.png"
-            description="An application designed to help you manage your planned soccer games and find players based on geolocation and profile data. On the other hand, it can help you find the right soccer game if you are alone or new in town, ensuring you can always join a game and enjoy playing"
+            title="AI Assistant"
+            description="A private AI assistant, built during an internship, that runs entirely on your own machine. Chat with local LLMs through Ollama, ask questions about your PDFs with a RAG pipeline that cites the source file and page, and forecast next year's product prices with machine learning."
+            src="/works/assistant-ia.png"
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
-            ctaUrl="https://pp.nouabi.tech/"
-            objectPosition="right 20%"
+            ctaUrl="https://github.com/scohail/Assistant-IA"
             isMobile={isMobile}
           />
         </MotionGridItem>
@@ -57,10 +56,11 @@ const FeaturedWorksSection = () => {
         <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
             idx={2}
-            title="Vox Chain"
-            description="A Crypto wallet app that makes blockchain actions as easy as having a conversation. It uses the power of AI; speech to text and LLMs to convert user's voice command to blockchain actions."
-            src="/works/vox-chain.png"
+            title="TIR Fraud Detection"
+            description="A computer vision system, built during my internship at Tanger Med Port Authority, that compares a TIR trailer at the port entry and exit to detect trailer swaps. It segments the trailer, compares its color palette with K-Means in CIELAB and reads its brand with EasyOCR, then flags a possible fraud in a Streamlit app."
+            src="/works/tir-fraud-detection.png"
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
+            ctaUrl="https://github.com/scohail/TIR_Fraude-Detection"
             isMobile={isMobile}
           />
         </MotionGridItem>
@@ -68,23 +68,23 @@ const FeaturedWorksSection = () => {
         <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
             idx={3}
-            title="Arm stabilizer"
-            description="Stabilization of a rotating arm using madgwick filtering algorithm and PID controllers for motors"
-            src="/works/arm-stabilizer.png"
-            height={{ base: '130px', md: '225px', '2xl': '320px' }}
-            ctaUrl="https://www.github.com/amineNouabi/arm-stabilizer"
+            title="Diversity Metrics"
+            description="A desktop app, Python library and REST API for measuring how differently the models of an ensemble behave. It computes 24 diversity metrics, shows which models are redundant and prunes them: on the sample dataset, it removes two of six models with no loss in accuracy."
+            src="/works/diversity-metrics.png"
+            height={{ base: '130px', md: '225px', '2xl': '300px' }}
+            ctaUrl="https://github.com/scohail/API_DiversityMetrics"
             isMobile={isMobile}
           />
         </MotionGridItem>
+
         <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
             idx={4}
-            title="AirBnB clone"
-            description="An AirBnB clone built with Python, Flask. It allows users to list their properties, search for properties, and book them. And a Command Line Interface to manage the app and database."
-            src="/works/airbnb.png"
-            height={{ base: '130px', md: '225px', '2xl': '330px' }}
-            ctaUrl="https://github.com/amineNouabi/AirBnB_clone_v4"
-            objectPosition="right 20%"
+            title="Fraud Detection"
+            description="How do you train a classifier when only 1 transaction in 600 is a fraud? An academic benchmark of 16 rebalancing strategies across 5 classifiers on 284k real credit-card transactions, using a strict leakage-free protocol. The best combination reaches a PR-AUC of 0.853."
+            src="/works/fraud-detection.png"
+            height={{ base: '130px', md: '225px', '2xl': '300px' }}
+            ctaUrl="https://github.com/scohail/Fraud_Detection"
             isMobile={isMobile}
           />
         </MotionGridItem>

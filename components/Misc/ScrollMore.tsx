@@ -103,7 +103,7 @@ const ScrollMore = () => {
               as="a"
               paddingY={3}
               fontFamily="monospace"
-              href="mailto:nouabi@nouabi.com"
+              href="mailto:housni@housni.tech"
               target="_blank"
               rel="noreferrer"
               color={emailColor}
@@ -130,7 +130,7 @@ const ScrollMore = () => {
                 marginTop: '10px',
               }}
             >
-              nouabi@nouabi.tech{' '}
+              housni@housni.tech{' '}
             </Text>
           </motion.div>
         )}

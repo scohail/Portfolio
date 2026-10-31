@@ -49,7 +49,7 @@ const Avatar = () => {
       >
         <ChkImage
           src={imgAvatar}
-          alt="KL Lawingco Avatar"
+          alt="Souhail HOUSNI Avatar"
           htmlWidth="250"
           htmlHeight="250"
           margin="auto"

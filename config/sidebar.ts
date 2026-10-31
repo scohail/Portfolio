@@ -10,17 +10,17 @@ type SocialMedia = {
 export const SocialMedias: SocialMedia[] = [
   {
     label: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/ahmed-amine-nouabi-2508461b9/',
+    href: 'https://linkedin.com/in/souhail-housni-01aa7b272',
     icon: FaLinkedin,
   },
   {
     label: 'Github',
-    href: 'https://github.com/amineNouabi',
+    href: 'https://github.com/scohail',
     icon: FaGithub,
   },
   {
     label: 'Email',
-    href: 'mailto:nouabi@nouabi.tech',
+    href: 'mailto:housni@housni.tech',
     icon: FaAt,
   },
 ]

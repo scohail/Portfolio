@@ -102,10 +102,9 @@ const Sidebar = () => {
             variants={fadeInUp}
             maxWidth={{ base: '100%', lg: '80%' }}
           >
-            An undergraduate multidisciplinary engineer specializing in
-            electromechanical engineering with passion for software and system
-            engineering. I am always looking for new challenges and
-            opportunities to learn and grow.
+            A multidisciplinary engineer with a background in industrial engineering, specializing in AI and data science. 
+            Passionate about industrial digitization and exploring emerging technologies.
+            Determined to tackle challenges and shape the future of Industry 4.0.
           </MotionText>
           <MotionButton
             size="lg"
@@ -117,13 +116,13 @@ const Sidebar = () => {
             width="120px"
             variants={simpleOpacity}
             as={'a'}
-            href="mailto:nouabi@nouabi.tech"
+            href="mailto:housni@housni.tech"
             target="_blank"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
             Get in touch!
-          </MotionButton>
+          </MotionButton> 
 
           <MotionBox d="flex" variants={simpleOpacity}>
             {SocialMedias.map((socMedia) => (
